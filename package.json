@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "anime_organization_app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,15 +18,15 @@
   "bugs": "",
   "keywords": [],
   "author": {
-    "name": "",
-    "email": "",
-    "url": ""
+    "name": "Gabriel Laboy",
+    "email": "glaboy@umass.edu"
   },
   "contributors": [],
   "scripts": {
     "start": "http-server src/frontend -p 3000 -c-1 -o -s"
   },
   "dependencies": {
+    "bootstrap-icons": "^1.11.3",
     "http-server": "^14.1.1"
   }
 }
