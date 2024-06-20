@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Show the requested view
     document.getElementById(viewId).style.display = "block";
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 document
@@ -55,11 +57,28 @@ document
     .getElementById("signUpGo")
     .addEventListener("click", () => navigate("accountView"));
 
+// document
+//     .getElementsByClassName("bi-file-plus")
+//     .addEventListener("click", () => navigate("accountView"));
+
+// document
+//     .getElementById("animeCardLink")
+//     .addEventListener("click", () => navigate("bookmarkView"));
+
+document.getElementById("animeCardLink").addEventListener("click", (event) => {
+    event.preventDefault(); // Prevent default anchor tag behavior
+    navigate("bookmarkView");
+});
+document.getElementById("bookmarkCardIcon").addEventListener("click", (event) => {
+    event.preventDefault(); // Prevent default anchor tag behavior
+    navigate("accountView");
+});
+
 // Initialize with the home view
 navigate("homeView");
 
 // Assuming your images are within a container with the class
-// 'image-container'
+'image-container'
 document.querySelectorAll(".image-container img").forEach((img) => {
     img.addEventListener("click", function () {
     const parent = this.parentNode;

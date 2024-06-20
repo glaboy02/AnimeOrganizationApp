@@ -61,7 +61,7 @@
             <p>This is the home page of our simple multi-view web application. Here, you can navigate to different sections of the website using the navigation bar above.</p>
         
             <div class="sectionOne">
-                <div class="row row-cols-1 row-cols-md-2 sectionnRow">
+                <div class="row row-cols-1 row-cols-md-2 sectionRow">
                     <h3 class="sectionTitles text-start">My Bookmarks</h3>
                     <div class="text-end">
                         <button class="btn btn-outline-success" id="viewAll">View All</button>
@@ -70,37 +70,53 @@
                 <div class="row row-cols-1 row-cols-md-5 g-4">
                     <div class="col">
                         <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <a href="" id="animeCardLink">
+                                <img src="..." class="card-img-top" alt="...">
+                            </a>
+                            <div class="bg-dark">
+                                <div class="row row-cols-sm-2 animeFooter">
+                                    <h3 class="w-75 animeName">Anime Name</h3>
+                                    <div class="w-25" >
+                                        <a href="" id="bookmarkCardIcon">
+                                            <i class="bi bi-file-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-bg-dark">
+                            <img src="img/animepic.jpeg" class="card-img" alt="...">
+                            <div class="card-img-overlay">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-bg-dark">
+                            <img src="img/NarutoImage.jpeg" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <img src="img/AttackOnTitanImage.jpeg" class="card-img-top" alt="...">
+                            <div class="bg-dark">   
+                                <div class="row row-cols-sm-2" style="padding: 0px 10px 0px 0px;">
+                                    <h3 class="w-75" style="color: white; font-size: large;">Anime Name</h3>
+                                    <div class="text-center w-25" >
+                                        <i class="bi bi-file-plus" style="font-size: 200%; color: white;"></i>
+                                    </div>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -121,7 +137,7 @@
             </div>
 
             <div class="sectionTwo">
-                <div class="row row-cols-1 row-cols-md-2 sectionnRow">
+                <div class="row row-cols-1 row-cols-md-2 sectionRow">
                     <h3 class="sectionTitles text-start">Top Airing Anime</h3>
                     <div class="text-end">
                         <button class="btn btn-outline-success" id="viewAll">View All</button>
@@ -181,7 +197,7 @@
             <!-- end of sectionOne -->
             </div>
             <div class="sectionThree">
-                <div class="row row-cols-1 row-cols-md-2 sectionnRow">
+                <div class="row row-cols-1 row-cols-md-2 sectionRow">
                     <h3 class="sectionTitles text-start">Upcoming Anime</h3>
                     <div class="text-end">
                         <button class="btn btn-outline-success" id="viewAll">View All</button>
@@ -241,7 +257,7 @@
             </div>
 
             <div class="sectionFour">
-                <div class="row row-cols-1 row-cols-md-2 sectionnRow">
+                <div class="row row-cols-1 row-cols-md-2 sectionRow">
                     <h3 class="sectionTitles text-start">All Time Most Popular Anime</h3>
                     <div class="text-end">
                         <button class="btn btn-outline-success" id="viewAll">View All</button>
