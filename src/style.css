@@ -136,3 +136,7 @@ section#footer-section{
     font-size: 200%;
     color: white;
 }
+
+#searchResultsContainer{
+    text-align: center;
+}
